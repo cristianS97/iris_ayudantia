@@ -63,7 +63,9 @@ print(classification_report(y_test, y_pred, target_names=iris['target_names']))
 print(x_test)
 print(clf.predict(x_test))
 
-print(iris['target_names'][clf.predict([[3, 3, 3, 3]])[0]])
+index = clf.predict([[3, 3, 3, 3]])
+index = index[0]
+print(iris['target_names'][index])
 
 with open(ruta.joinpath('clasificador.pkl'), 'wb') as f:
     pickle.dump(clf, f, pickle.HIGHEST_PROTOCOL)
@@ -71,5 +73,7 @@ with open(ruta.joinpath('clasificador.pkl'), 'wb') as f:
 with open(ruta.joinpath('clasificador.pkl'), 'rb') as f:
     new_clf = pickle.load(f)
 
-print(iris['target_names'][new_clf.predict([[3, 3, 3, 3]])[0]])
+index = new_clf.predict([[3, 3, 3, 3]])
+index = index[0]
+print(iris['target_names'][index])
 
