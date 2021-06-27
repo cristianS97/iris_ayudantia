@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\crist\Desktop\clasificador\iris_ayudantia\venv"
+VIRTUAL_ENV="D:\archivos\ayudantia\clases\clasificador\iris_ayudantia\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

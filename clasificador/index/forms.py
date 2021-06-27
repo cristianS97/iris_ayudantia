@@ -6,7 +6,7 @@ class IrisForm(forms.Form):
         label='Largo del sepalo',
         widget=forms.NumberInput(
             attrs={
-                'class': '',
+                'class': 'form-control',
                 'step': 0.1
             }
         )
@@ -15,7 +15,7 @@ class IrisForm(forms.Form):
         label='Ancho del sepalo',
         widget=forms.NumberInput(
             attrs={
-                'class': '',
+                'class': 'form-control',
                 'step': 0.1
             }
         )
@@ -24,7 +24,7 @@ class IrisForm(forms.Form):
         label='Largo del pétalo',
         widget=forms.NumberInput(
             attrs={
-                'class': '',
+                'class': 'form-control',
                 'step': 0.1
             }
         )
@@ -33,7 +33,7 @@ class IrisForm(forms.Form):
         label='Ancho del pétalo',
         widget=forms.NumberInput(
             attrs={
-                'class': '',
+                'class': 'form-control',
                 'step': 0.1
             }
         )

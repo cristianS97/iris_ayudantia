@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Resultado{% endblock title %}
+
+{% block content %}
+    <h1 class="text-white text-center">Resultado</h1>
+
+    <div class="w-25 mx-auto">
+        <p class="text-white">sepal_length: {{ sepal_length }}</p>
+        <p class="text-white">sepal_width: {{ sepal_width }}</p>
+        <p class="text-white">petal_length: {{ petal_length }}</p>
+        <p class="text-white">petal_width: {{ petal_width }}</p>
+        <p class="text-white">Clasificación: {{ prediccion }}</p>
+
+        <a href="{% url 'index' %}" class="badge badge-info">Volver</a>
+    </div>
+{% endblock content %}

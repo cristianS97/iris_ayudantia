@@ -1,4 +1,4 @@
-#!c:\users\crist\desktop\clasificador\iris_ayudantia\venv\scripts\python.exe
+#!d:\archivos\ayudantia\clases\clasificador\iris_ayudantia\venv\scripts\python.exe
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
